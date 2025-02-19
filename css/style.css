@@ -1,0 +1,205 @@
+*{
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+	scroll-behavior: smooth;
+    color: white !important;
+    overflow-x: hidden ;
+   
+}
+
+a{
+    list-style: none;
+    text-decoration: none !important;
+    
+}
+ul{
+    list-style: none !important;
+
+}
+img{
+    vertical-align: middlesS;
+    max-width: 100%;
+}
+:root{
+    --primery-color: #83b735;
+    --hover-color:#ff6f91;
+    --textclr:#506ad3;
+    --primery-font:"Headland One", serif;
+    --heading-font:"Poppins", serif;
+}
+.navbar-brand img{
+    width: 150px;
+}
+.nav-link{
+    font-family: var(--primery-font);
+    font-weight: bolder;
+}
+.dropdown__btn{
+    background-color: var(--primery-color);
+    width: 100%;
+}
+.danger__button{
+    display: flex;
+    justify-content: space-around;
+}
+
+                /* item__section start */
+#item__section{
+    margin-top: 50px;
+}
+.collection__heading{
+    font-family: var(--heading-font);
+    color: black;
+}
+.collection{
+    background-color: #f2f2f2;
+}
+.line-container {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.gray-line {
+    width: 100%;
+    height: 2px;
+    background-color: #dedede;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.long-line {
+    width: 20%;
+    height: 1px;
+    background-color: #fbbc34;
+    position: absolute;
+    top: 0; 
+    left: 0;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    position: relative;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.card:hover{
+    border: 1px solid var(--primery-color);
+}
+.card__discount{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 24px;
+    width: 40px;
+    background-color: var(--primery-color);
+    color: white;
+    font-family: var(--primery-font);
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card__hovar{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    height: 50px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    opacity: 0%;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.card:hover .card__hovar{
+    opacity: 100%;
+}
+.card-body{
+    padding: 0 0 20px 0 !important;
+}
+.card__img {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0; 
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+  
+.card__img__top {
+    opacity: 1;
+    z-index: 2;
+    transition: all 200ms linear;
+}
+  
+.card__img__bottom {
+    opacity: 0;
+    display: none;
+    z-index: 1;
+    transition: all 200ms linear;
+}
+
+  .card__img:hover .card__img__top {
+    opacity: 0;
+    display: none;
+    transition: all 200ms linear;
+  }
+  .card__img:hover .card__img__bottom {
+    opacity: 1;
+    display: block;
+    transition: all 200ms linear;
+  }
+  
+  
+.card__button{
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 138px;
+    height: 36px;
+    border: none;
+    background-color: #04472d;
+}
+.add__class{
+    text-transform: uppercase;
+    padding: 10px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 16px;
+    color: gainsboro;
+    cursor: pointer;
+    transition: 0.5ms;
+}
+.card-title{
+    font-size: 17px;
+}
+.button__icon{
+    display: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.5ms;
+}
+.card__button:hover .add__class{
+    
+    transition: 0.5ms;
+    display: none;
+}
+.card__button:hover .button__icon{
+    
+    transition: 0.5ms;
+    display: block;
+}
+.card_btn{
+    display: inline-block;
+    border: 2px solid #c8e8e4;
+    padding: 0px 5px;
+    border-radius: 50px;
+    background: #c8e8e4;
+    
+}
